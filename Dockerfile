@@ -1,6 +1,6 @@
-FROM maven:3-jdk-11
+FROM maven:3-jdk-9
 
-MAINTAINER Sascha Selzer sascha.selzer@gmail.com
+LABEL MAINTAINER="philipp.haussleiter@innoq.com"
 
 RUN apt-get update && apt-get install -y \
     git-crypt \
