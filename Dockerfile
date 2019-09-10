@@ -1,4 +1,4 @@
-FROM maven:3-jdk-11
+FROM maven:3-jdk-12
 
 MAINTAINER Sascha Selzer sascha.selzer@gmail.com
 
