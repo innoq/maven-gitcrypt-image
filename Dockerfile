@@ -1,8 +1,10 @@
-FROM maven:3-jdk-12
+FROM maven:3-jdk-11
 
-MAINTAINER Sascha Selzer sascha.selzer@gmail.com
+LABEL maintainer="sascha.selzer@gmail.com"
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && \
+    apt-get install -y \
     git-crypt \
     jq && \
+    apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
